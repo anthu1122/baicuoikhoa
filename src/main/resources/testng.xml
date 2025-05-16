@@ -2,11 +2,14 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
-            <class name="scripts.TC14_LoginAsOfficeEmployeeTest"/>
-            <class name="scripts.TC10_VerifyRoleDropdownLoadsAutomaticallyTest"/>
-            <class name="scripts.TC09_VerifyPasswordWithPersonalInfoWarningTest"/>
             <class name="scripts.TC01_AddEmployeeFormAccessTest"/>
-            <class name="scripts.TC03_VerifyValidUsernameAndPasswordAreAccepted"/>
+            <class name="scripts.TC05_VerifyDuplicateUsernamePerDepartmentTest"/>
+            <class name="scripts.TC07_VerifyInvalidPasswordsRejectedTest"/>
+            <class name="scripts.TC09_VerifyPasswordWithPersonalInfoWarningTest"/>
+            <class name="scripts.TC10_VerifyRoleDropdownLoadsAutomaticallyTest"/>
+            <class name="scripts.TC14_LoginAsOfficeEmployeeTest"/>
+            <class name="scripts.TC_001_VerifyAttendanceListDisplaysTest"/>
+            <class name="scripts.TC_002_VerifyDefaultAttendanceStatusTest"/>
         </classes>
     </test>
 </suite>

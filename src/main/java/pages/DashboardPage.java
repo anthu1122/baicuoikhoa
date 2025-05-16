@@ -28,10 +28,12 @@ public class DashboardPage {
     }
 
     public DashboardPage goToEmployeePage() {
+
         return clickMainMenu("Cấu hình").clickSubMenu("Quản lý nhân viên");
     }
 
     public DashboardPage goToAttendancePage() {
+
         return clickMainMenu("Đào tạo").clickSubMenu("Điểm danh");
     }
 
