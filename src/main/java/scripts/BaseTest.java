@@ -10,20 +10,17 @@ import java.time.Duration;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected WebDriverWait wait;  // Khai báo WebDriverWait
+    protected WebDriverWait wait;
 
     @BeforeMethod
     public void setUp() {
-        DriverFactory.setDriver("edge");  // Chọn trình duyệt muốn sử dụng, ví dụ 'edge', 'chrome', 'firefox'
+        DriverFactory.setDriver("edge");
         driver = DriverFactory.getDriver();
 
         driver.manage().window().maximize();
         driver.get("https://olms.codedao.io.vn/login");
 
-        // Khởi tạo WebDriverWait
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-        // Đảm bảo trang đã tải hoàn toàn
         wait.until(ExpectedConditions.titleContains("OLMS"));
     }
 
